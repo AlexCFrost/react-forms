@@ -16,7 +16,7 @@ function App() {
     validationSchema: Yup.object({
       firstName: Yup.string().required('Enter your first name!'),
       lastName: Yup.string().required('Enter your last name'),
-      email: Yup.string().required('Enter your email address'),
+      email: Yup.string().email('Enter valid mail').required('Enter your email address'),
       contacts: Yup.string().required('Enter your contact'),
     }),
     // For submit
