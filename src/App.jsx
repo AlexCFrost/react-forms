@@ -64,6 +64,7 @@ function App() {
           id="email"
           name="email"
           onChange={formik.handleChange}
+          onBlur={formik.handleBlur}
           value={formik.values.email}
         />
         {formik.touched.email && formik.errors.email ? <div>{formik.errors.email}</div> : null}
